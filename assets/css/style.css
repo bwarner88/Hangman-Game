@@ -1,0 +1,40 @@
+.header {
+    color: #ffe919; 
+    text-align: center;
+
+}
+
+body {
+    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2016/01/Star-Wars-RPG.jpg")
+}
+
+.container {
+    margin: 0 auto;
+   
+}
+
+.col-1 {
+    float: left;
+    color: #ffe919;
+    border-style: dashed;
+    width:30%;
+    height: 600px;
+    
+    
+}
+
+.starwars {
+    width: 250px;
+    height: 250px;
+    margin-left: 20%;
+}
+
+.col-2 {
+    float: left;
+    color: #ffe919;
+    border-style: dashed;
+    text-align: center;
+    margin: auto;  
+    width: 69%;
+    height: 600px
+}
