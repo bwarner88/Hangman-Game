@@ -44,7 +44,8 @@ var findUserGuess = function (key) {
 
 
 
-
+/////I couldn't get the wins to go up. Every time I added a function with an if statement
+//it wouldn't change anything or would break everything. Think I'm missing a var or using the wrong one?
 
 //sammy var
 var wins = 0;
@@ -70,10 +71,10 @@ document.onKeyUp = function () {
     console.log();
 }
 
-
 var checkGuess = function () {
     if (remainSpan.indexOf(word) === -1) {
         hasWon = true;
+    
     }
 };
 
@@ -83,6 +84,7 @@ initUserGuess();
 updateHTML();
 // console.log(currentWord)
 document.onkeyup = function (event) {
+    console.log("This is the on key up.")
     var currentLetter = event.key;
     findUserGuess(currentLetter);
     guessedWords.push(currentLetter);
@@ -93,6 +95,8 @@ document.onkeyup = function (event) {
         remainingGuess = 10;
         initUserGuess()
         updateHTML()
+        currentWord = word[Math.floor(Math.random() * word.length)];
+        
     };
     updateHTML();
 }
